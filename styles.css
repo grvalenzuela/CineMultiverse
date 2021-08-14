@@ -1,0 +1,355 @@
+/* Reset */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Font */
+body {
+  font-family: "Encode Sans SC", sans-serif;
+  margin: 0;
+}
+
+/*
+PALETA COLORES: 
+#6D04BD
+#4F2470
+#8C05F0
+#AB4EF2
+#410270
+*/
+
+/* Estilos Tabla */
+.tabla {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.tabla__titulo {
+  background-color: #ab4ef2;
+  color: white;
+}
+.tabla__header {
+  color: #6d04bd;
+}
+
+.tabla__body {
+  color: black;
+  font-weight: 300;
+}
+
+.tabla__lista {
+  list-style: inside;
+  margin: 3px;
+}
+
+/* Estilos Cards Peliculas */
+.card-pelicula {
+  background-color: #e7ebe8;
+  width: 310px;
+  padding: 5px;
+  margin: 2px;
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+}
+
+.imagen-pelicula {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.card-pelicula-descripcion {
+  display: block;
+  text-align: center;
+}
+
+.card-pelicula h3 {
+  color: #430c61;
+}
+.card-pelicula p {
+  color: #1e012e;
+}
+
+/* Estilos Card Noticias */
+.card-noticias {
+  padding: 4px;
+  background-color: #47258f;
+  color: aliceblue;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+/* Estilos formulario */
+.formContacto {
+  width: 25%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+.formContacto__titulo {
+  width: 200px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.formContacto__label {
+  width: 60px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.formContacto__label--notificaciones {
+  width: 250px;
+  padding-bottom: 5px;
+}
+.formContacto__contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.formContacto__input {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formContacto__checkbox {
+  /* width: 20px; */
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.formContacto__checkbox:checked {
+  background-color: #8c05f0;
+}
+
+.formContacto__select {
+  width: 125px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formContacto__Boton {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #410270;
+}
+
+.formContacto__Boton:hover {
+  background-color: #4f2470;
+  cursor: pointer;
+}
+
+.formContacto_textArea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}
+
+/* Estilos Titulo */
+.titulo {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.titulo__logo {
+  display: inline-block;
+  position: relative;
+}
+.titulo__texto {
+  display: inline-block;
+  color: #8c05f0;
+}
+
+/* Estilos Nav Menu */
+.menuNav {
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+}
+.menuNav__item {
+  text-align: center;
+  display: inline-block;
+}
+.menuNav__link {
+  color: white;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.menuNav__link:hover {
+  background-color: #4f2470;
+  color: white;
+}
+
+/* Estilos lista items peliculas*/
+.peliculasContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.itemPelicula {
+  display: flex;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 0px;
+  width: 30%;
+  border: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemPelicula__img:hover {
+  transform: scale(1.03);
+}
+
+.itemPelicula__img {
+  transition: transform 0.2s;
+  width: 196px;
+  height: 294px;
+}
+
+.itemPelicula__titulo {
+  margin: 0px;
+  padding-left: 10px;
+  color: #410270;
+}
+
+.itemPelicula__descripcion {
+  padding: 10px;
+}
+
+.itemPelicula__link {
+  text-decoration: none;
+}
+
+.itemPelicula__puntaje {
+  background-color: #8c05f0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 60%;
+  width: 60px;
+  font-size: 130%;
+  padding: 2px;
+  border-radius: 15px 50px;
+}
+
+/*SERIES*/
+.seriesContenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 315px 315px;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 50px;
+}
+
+.itemSerie {
+  /* border: 1px solid black; */
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 206px 47px;
+  grid-template-areas: "img titulo" "img descripcion" "img puntaje";
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.itemSerie__img:hover {
+  transform: scale(1.03);
+}
+
+.itemSerie__img {
+  grid-area: img;
+  transition: transform 0.2s;
+  width: 196px;
+  height: 294px;
+}
+
+.itemSerie__titulo {
+  margin: 0px;
+  grid-area: titulo;
+  padding-left: 10px;
+  color: #410270;
+}
+
+/* .itemSerie__texto {
+  
+} */
+
+.itemSerie__descripcion {
+  padding: 10px;
+  grid-area: descripcion;
+}
+
+.itemSerie__link {
+  text-decoration: none;
+}
+
+.itemSerie__puntaje {
+  background-color: #8c05f0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  grid-area: puntaje;
+  align-self: end;
+  margin-left: 60%;
+  width: 60px;
+  font-size: 130%;
+  padding: 2px;
+  border-radius: 15px 50px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  min-height: 40px;
+  bottom: 0;
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+  color: white;
+  font-size: 110%;
+  justify-content: flex-start;
+}

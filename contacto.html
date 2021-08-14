@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+  <!-- Seccion Contacto con formulario para enviar consultas -->
+  <body>
+    <heading>
+      <!-- Menu de navegacion -->
+      <ul class="menuNav">
+        <li class="menuNav__item">
+          <a href="index.html" class="menuNav__link">Inicio</a>
+        </li>
+        <li class="menuNav__item">
+          <a href="peliculas.html" class="menuNav__link">Peliculas</a>
+        </li>
+        <li class="menuNav__item">
+          <a href="series.html" class="menuNav__link">Series</a>
+        </li>
+        <li class="menuNav__item">
+          <a href="cursos.html" class="menuNav__link">Cursos</a>
+        </li>
+        <li class="menuNav__item">
+          <a href="extras.html" class="menuNav__link">Extras</a>
+        </li>
+        <li class="menuNav__item">
+          <a href="contacto.html" class="menuNav__link">Contacto</a>
+        </li>
+      </ul>
+      <!-- Logo de la Web -->
+      <section class="titulo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6EJhy09_lmYzLqVGruOvSChym3M9YvYujsOdOLQji5V4dhQmM9EcQ_ksnVKJhgidfyu8&usqp=CAU"
+          alt="Logo de la web"
+          width="50"
+          height="50"
+          class="titulo__logo"
+        />
+        <h1 class="titulo__texto">Cine Multiverse</h1>
+      </section>
+    </heading>
+    <main>
+      <!-- Formulario de consulta -->
+      <form action="#" class="formContacto">
+        <fieldset>
+          <legend class="formContacto__titulo">Formulario de Contacto</legend>
+          <div>
+            <label class="formContacto__label" for="nombre">Nombre: </label>
+            <input class="formContacto__input" type="text" name="nombre" />
+          </div>
+          <div>
+            <label class="formContacto__label" for="email">Email: </label>
+            <input class="formContacto__input" type="text" name="email" />
+          </div>
+          <div>
+            <label class="formContacto__label" for="sexo">Sexo: </label>
+            <select class="formContacto__select" name="sexo" id="sexoId">
+              <option value="H">Hombre</option>
+              <option value="M">Mujer</option>
+              <option value="O">Otro</option>
+            </select>
+          </div>
+          <div class="formContacto__contenedor">
+            <label
+              class="formContacto__label formContacto__label--notificaciones"
+              for="notificaciones"
+              >¿Desea Recibir notificaciones?:
+            </label>
+            <input
+              class="formContacto__checkbox"
+              type="checkbox"
+              name="notificaciones"
+              value="1"
+            />
+          </div>
+          <div>
+            <label class="formContacto__label" for="comentarios"
+              >Consulta:
+            </label>
+            <textarea
+              class="formContacto_textArea"
+              name="comentarios"
+              id="comentariosId"
+              cols="20"
+              rows="7"
+            ></textarea>
+          </div>
+          <input class="formContacto__Boton" type="submit" value="Enviar" />
+          <input
+            class="formContacto__Boton"
+            type="reset"
+            value="Limpiar campos"
+          />
+        </fieldset>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>
+        <strong>Valenzuela Gabriel Román - 2021</strong>
+      </p>
+    </footer>
+  </body>
+</html>
