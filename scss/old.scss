@@ -1,0 +1,394 @@
+@import "scss/_globals";
+
+/* Reset */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Font */
+body {
+  margin: 0;
+}
+
+/* ----Index---- */
+
+/* Estilos Titulo */
+.titulo {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.titulo__logo {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.titulo__texto {
+  display: inline-block;
+  color: $color-principal;
+}
+
+/* Estilos Nav Menu */
+.menuNav {
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+}
+.menuNav__item {
+  text-align: center;
+  display: inline-block;
+}
+.menuNav__link {
+  color: white;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.menuNav__link:hover {
+  background-color: #4f2470;
+  color: white;
+}
+
+/* Estilos Carousel Estrenos */
+.imgEstrenoContenedor {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.estrenoDescripcion {
+  text-shadow: 2px 2px 5px black;
+}
+.imgContenedor-imagen {
+  max-width: initial;
+  position: relative;
+}
+.menuCollapse {
+  z-index: 3;
+  background-color: white;
+}
+
+/* Media Responsive carousel y navbar */
+@media only screen and (max-width: 700px) {
+  .imgEstrenoContenedor {
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imgContenedor-imagen {
+    max-width: initial;
+    width: 100%;
+    position: relative;
+  }
+
+  .estrenoDescripcion {
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .titulo {
+    display: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .titulo__logo {
+    display: none;
+  }
+  .titulo__texto {
+    display: inline-block;
+    color: $color-principal;
+  }
+
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+
+  .menuCollapse {
+    z-index: 3;
+  }
+}
+
+/* Estilos Card Noticias */
+.noticiasSeccion {
+  margin-bottom: 50px;
+}
+.cardNoticias-titulo {
+  padding: 5px;
+  background-color: #4f2470;
+  border-bottom: 6px solid;
+  border-color: #ab4ef2;
+}
+
+.noticiasItem {
+  padding: 20px;
+}
+
+.noticiasItem__imgContenedor {
+  max-height: 240px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----Index---- */
+.conteinerPeliculas {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+.conteiner-item {
+  margin-bottom: 25px;
+}
+
+.item-pelicula {
+  border-radius: 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.itemPelicula-img {
+  transition: transform 0.8s;
+  max-height: 300px;
+}
+
+.itemPelicula-img:hover {
+  transform: scale(1.03);
+}
+
+.itemPelicula-titulo {
+  text-decoration: none;
+}
+
+.itemPelicula-titulo:hover {
+  text-decoration: none;
+}
+
+/* Estilos formulario */
+.formContacto {
+  width: 25%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+.formContacto_header {
+  background-color: $color-principal;
+}
+
+.formContacto__checkbox {
+  /* width: 20px; */
+  border-radius: 3px;
+  height: 1em;
+  width: 1em;
+  background-color: #eee;
+}
+.formContacto__checkbox:checked {
+  background-color: $color-principal;
+}
+
+.formContacto__select {
+  width: 125px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formContacto__Boton {
+  color: white;
+  background-color: $color-principal !important;
+  border-color: #6d04bd !important;
+}
+
+.formContacto__Icono {
+  color: $color-principal;
+}
+
+.formContacto_notificaciones {
+  margin: 0px !important;
+  padding-top: 0px !important;
+}
+/* 
+.formContacto__Boton:hover {
+  background-color: #4f2470;
+  cursor: pointer;
+} */
+
+/* .formContacto_textArea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+} */
+
+/* Estilos lista items peliculas*/
+.peliculasContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.itemPelicula {
+  display: flex;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 0px;
+  width: 30%;
+  border: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemPelicula__img:hover {
+  transform: scale(1.03);
+}
+
+.itemPelicula__img {
+  transition: transform 0.2s;
+  width: 196px;
+  height: 294px;
+}
+
+.itemPelicula__titulo {
+  margin: 0px;
+  padding-left: 10px;
+  color: #410270;
+}
+
+.itemPelicula__descripcion {
+  padding: 10px;
+}
+
+.itemPelicula__link {
+  text-decoration: none;
+}
+
+.itemPelicula__puntaje {
+  background-color: $color-principal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 60%;
+  width: 60px;
+  font-size: 130%;
+  padding: 2px;
+  border-radius: 15px 50px;
+}
+
+/*SERIES*/
+.seriesContenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 315px 315px;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 50px;
+}
+
+.itemSerie {
+  /* border: 1px solid black; */
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40px 206px 47px;
+  grid-template-areas: "img titulo" "img descripcion" "img puntaje";
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.itemSerie__img:hover {
+  transform: scale(1.03);
+}
+
+.itemSerie__img {
+  grid-area: img;
+  transition: transform 0.2s;
+  width: 196px;
+  height: 294px;
+}
+
+.itemSerie__titulo {
+  margin: 0px;
+  grid-area: titulo;
+  padding-left: 10px;
+  color: #410270;
+}
+
+/* .itemSerie__texto {
+  
+} */
+
+.itemSerie__descripcion {
+  padding: 10px;
+  grid-area: descripcion;
+}
+
+.itemSerie__link {
+  text-decoration: none;
+}
+
+.itemSerie__puntaje {
+  background-color: $color-principal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  grid-area: puntaje;
+  align-self: end;
+  margin-left: 60%;
+  width: 60px;
+  font-size: 130%;
+  padding: 2px;
+  border-radius: 15px 50px;
+}
+
+/* Cursos */
+.conteinerCursos {
+  width: 100%;
+}
+
+.conteinerCursos__item {
+  padding: 1rem;
+}
+
+.conteinerCursos__card {
+  width: 18rem;
+  border-color: #a75ae281 !important;
+}
+
+.conteinerCursos__imgContenedor {
+  max-height: 190px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+  color: white;
+  font-size: 110%;
+}
