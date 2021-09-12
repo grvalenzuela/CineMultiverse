@@ -1,0 +1,50 @@
+@import "_globals";
+
+/* Estilos formulario */
+.formContacto {
+  width: 25%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+.formContacto_header {
+  background-color: $color-principal;
+}
+
+.formContacto__checkbox {
+  /* width: 20px; */
+  border-radius: 3px;
+  height: 1em;
+  width: 1em;
+  background-color: #eee;
+}
+.formContacto__checkbox:checked {
+  background-color: $color-principal;
+}
+
+.formContacto__select {
+  width: 125px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.formContacto__Boton {
+  color: white;
+  background-color: $color-principal !important;
+  border-color: #6d04bd !important;
+}
+
+.formContacto__Icono {
+  color: $color-principal;
+}
+
+.formContacto_notificaciones {
+  margin: 0px !important;
+  padding-top: 0px !important;
+}

@@ -5,11 +5,9 @@ ul {
   margin: 0;
   padding: 0; }
 
-/* Font */
 body {
   margin: 0; }
 
-/* ----Index---- */
 /* Estilos Titulo */
 .titulo {
   display: block;
@@ -45,6 +43,34 @@ body {
   background-color: #4f2470;
   color: white; }
 
+/* Media Responsive navbar */
+@media only screen and (max-width: 700px) {
+  .titulo {
+    display: relative;
+    display: flex;
+    align-items: center; }
+  .titulo__logo {
+    display: none; }
+  .titulo__texto {
+    display: inline-block;
+    color: #8c05f0; }
+  .navbar-fixed-top {
+    position: relative;
+    top: auto; }
+  .menuCollapse {
+    z-index: 3; } }
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  background: #410270;
+  background: linear-gradient(126deg, #410270 0%, #6d04bd 46%, #8c05f0 100%);
+  color: white;
+  font-size: 110%; }
+
+/* Variables */
+/* ----Index---- */
 /* Estilos Carousel Estrenos */
 .imgEstrenoContenedor {
   max-height: 500px;
@@ -73,21 +99,7 @@ body {
     width: 100%;
     position: relative; }
   .estrenoDescripcion {
-    text-shadow: 2px 2px 5px black; }
-  .titulo {
-    display: relative;
-    display: flex;
-    align-items: center; }
-  .titulo__logo {
-    display: none; }
-  .titulo__texto {
-    display: inline-block;
-    color: #8c05f0; }
-  .navbar-fixed-top {
-    position: relative;
-    top: auto; }
-  .menuCollapse {
-    z-index: 3; } }
+    text-shadow: 2px 2px 5px black; } }
 
 /* Estilos Card Noticias */
 .noticiasSeccion {
@@ -107,7 +119,8 @@ body {
   position: relative;
   overflow: hidden; }
 
-/* ----Index---- */
+/* Variables */
+/*----Peliculas---- */
 .conteinerPeliculas {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -135,6 +148,26 @@ body {
 .itemPelicula-titulo:hover {
   text-decoration: none; }
 
+/* Variables */
+/* Variables */
+/* Cursos */
+.conteinerCursos {
+  width: 100%; }
+
+.conteinerCursos__item {
+  padding: 1rem; }
+
+.conteinerCursos__card {
+  width: 18rem;
+  border-color: #a75ae281 !important; }
+
+.conteinerCursos__imgContenedor {
+  max-height: 190px;
+  position: relative;
+  overflow: hidden; }
+
+/* Variables */
+/* Variables */
 /* Estilos formulario */
 .formContacto {
   width: 25%;
@@ -177,146 +210,5 @@ body {
   margin: 0px !important;
   padding-top: 0px !important; }
 
-/* 
-.formContacto__Boton:hover {
-  background-color: #4f2470;
-  cursor: pointer;
-} */
-/* .formContacto_textArea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  resize: none;
-  display: block;
-} */
-/* Estilos lista items peliculas*/
-.peliculasContenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.itemPelicula {
-  display: flex;
-  margin: 10px;
-  margin-bottom: 50px;
-  padding: 0px;
-  width: 30%;
-  border: 1px;
-  justify-content: center;
-  align-items: center; }
-
-.itemPelicula__img:hover {
-  transform: scale(1.03); }
-
-.itemPelicula__img {
-  transition: transform 0.2s;
-  width: 196px;
-  height: 294px; }
-
-.itemPelicula__titulo {
-  margin: 0px;
-  padding-left: 10px;
-  color: #410270; }
-
-.itemPelicula__descripcion {
-  padding: 10px; }
-
-.itemPelicula__link {
-  text-decoration: none; }
-
-.itemPelicula__puntaje {
-  background-color: #8c05f0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-left: 60%;
-  width: 60px;
-  font-size: 130%;
-  padding: 2px;
-  border-radius: 15px 50px; }
-
+/* Variables */
 /*SERIES*/
-.seriesContenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 315px 315px;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 50px; }
-
-.itemSerie {
-  /* border: 1px solid black; */
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 40px 206px 47px;
-  grid-template-areas: "img titulo" "img descripcion" "img puntaje";
-  justify-content: space-between;
-  justify-items: stretch;
-  align-items: stretch; }
-
-.itemSerie__img:hover {
-  transform: scale(1.03); }
-
-.itemSerie__img {
-  grid-area: img;
-  transition: transform 0.2s;
-  width: 196px;
-  height: 294px; }
-
-.itemSerie__titulo {
-  margin: 0px;
-  grid-area: titulo;
-  padding-left: 10px;
-  color: #410270; }
-
-/* .itemSerie__texto {
-  
-} */
-.itemSerie__descripcion {
-  padding: 10px;
-  grid-area: descripcion; }
-
-.itemSerie__link {
-  text-decoration: none; }
-
-.itemSerie__puntaje {
-  background-color: #8c05f0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  grid-area: puntaje;
-  align-self: end;
-  margin-left: 60%;
-  width: 60px;
-  font-size: 130%;
-  padding: 2px;
-  border-radius: 15px 50px; }
-
-/* Cursos */
-.conteinerCursos {
-  width: 100%; }
-
-.conteinerCursos__item {
-  padding: 1rem; }
-
-.conteinerCursos__card {
-  width: 18rem;
-  border-color: #a75ae281 !important; }
-
-.conteinerCursos__imgContenedor {
-  max-height: 190px;
-  position: relative;
-  overflow: hidden; }
-
-/* Footer */
-.footer {
-  margin-top: 40px;
-  width: 100%;
-  background: #410270;
-  background: linear-gradient(126deg, #410270 0%, #6d04bd 46%, #8c05f0 100%);
-  color: white;
-  font-size: 110%; }

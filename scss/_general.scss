@@ -1,0 +1,96 @@
+@import "scss/_globals";
+
+/* Reset */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+/* Estilos Titulo */
+.titulo {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.titulo__logo {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.titulo__texto {
+  display: inline-block;
+  color: $color-principal;
+}
+
+/* Estilos Nav Menu */
+.menuNav {
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+}
+.menuNav__item {
+  text-align: center;
+  display: inline-block;
+}
+.menuNav__link {
+  color: white;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.menuNav__link:hover {
+  background-color: #4f2470;
+  color: white;
+}
+
+/* Media Responsive navbar */
+@media only screen and (max-width: 700px) {
+  .titulo {
+    display: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .titulo__logo {
+    display: none;
+  }
+  .titulo__texto {
+    display: inline-block;
+    color: $color-principal;
+  }
+
+  .navbar-fixed-top {
+    position: relative;
+    top: auto;
+  }
+
+  .menuCollapse {
+    z-index: 3;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  width: 100%;
+  background: rgb(65, 2, 112);
+  background: linear-gradient(
+    126deg,
+    rgba(65, 2, 112, 1) 0%,
+    rgba(109, 4, 189, 1) 46%,
+    rgba(140, 5, 240, 1) 100%
+  );
+  color: white;
+  font-size: 110%;
+}

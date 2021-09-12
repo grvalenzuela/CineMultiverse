@@ -1,0 +1,35 @@
+@import "scss/_globals.scss";
+
+/*----Peliculas---- */
+.conteinerPeliculas {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+.conteiner-item {
+  margin-bottom: 25px;
+}
+
+.item-pelicula {
+  border-radius: 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.itemPelicula-img {
+  transition: transform 0.8s;
+  max-height: 300px;
+}
+
+.itemPelicula-img:hover {
+  transform: scale(1.03);
+}
+
+.itemPelicula-titulo {
+  text-decoration: none;
+}
+
+.itemPelicula-titulo:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+@import "_globals";
+
+/* Cursos */
+.conteinerCursos {
+  width: 100%;
+}
+
+.conteinerCursos__item {
+  padding: 1rem;
+}
+
+.conteinerCursos__card {
+  width: 18rem;
+  border-color: #a75ae281 !important;
+}
+
+.conteinerCursos__imgContenedor {
+  max-height: 190px;
+  position: relative;
+  overflow: hidden;
+}

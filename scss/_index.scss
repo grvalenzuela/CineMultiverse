@@ -1,0 +1,62 @@
+@import "scss/_globals.scss";
+
+/* ----Index---- */
+
+/* Estilos Carousel Estrenos */
+.imgEstrenoContenedor {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.estrenoDescripcion {
+  text-shadow: 2px 2px 5px black;
+}
+.imgContenedor-imagen {
+  max-width: initial;
+  position: relative;
+}
+.menuCollapse {
+  z-index: 3;
+  background-color: white;
+}
+
+/* Media Responsive carousel y navbar */
+@media only screen and (max-width: 700px) {
+  .imgEstrenoContenedor {
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imgContenedor-imagen {
+    max-width: initial;
+    width: 100%;
+    position: relative;
+  }
+
+  .estrenoDescripcion {
+    text-shadow: 2px 2px 5px black;
+  }
+}
+
+/* Estilos Card Noticias */
+.noticiasSeccion {
+  margin-bottom: 50px;
+}
+.cardNoticias-titulo {
+  padding: 5px;
+  background-color: #4f2470;
+  border-bottom: 6px solid;
+  border-color: #ab4ef2;
+}
+
+.noticiasItem {
+  padding: 20px;
+}
+
+.noticiasItem__imgContenedor {
+  max-height: 240px;
+  position: relative;
+  overflow: hidden;
+}
