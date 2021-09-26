@@ -40,6 +40,21 @@
   }
 }
 
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .noticiasItem {
+    padding: 0px !important;
+    width: 85%;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .noticiasItem-card {
+    width: 80%;
+  }
+}
+
 /* Estilos Card Noticias */
 .noticiasSeccion {
   margin-bottom: 50px;

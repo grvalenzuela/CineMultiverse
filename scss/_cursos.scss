@@ -19,3 +19,14 @@
   position: relative;
   overflow: hidden;
 }
+
+/* Media Responsive carousel y navbar */
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .conteinerCursos__card {
+    width: 95%;
+  }
+
+  .conteinerCursos__imgContenedor {
+    max-height: 150px;
+  }
+}

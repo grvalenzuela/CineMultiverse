@@ -33,3 +33,15 @@
 .itemPelicula-titulo:hover {
   text-decoration: none;
 }
+
+/* Media Responsive */
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .itemPelicula-img {
+    transition: transform 0.8s;
+    max-height: 200px;
+  }
+
+  .item {
+    width: 80%;
+  }
+}

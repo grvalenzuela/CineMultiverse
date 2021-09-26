@@ -101,6 +101,15 @@ body {
   .estrenoDescripcion {
     text-shadow: 2px 2px 5px black; } }
 
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .noticiasItem {
+    padding: 0px !important;
+    width: 85%; }
+  .card {
+    width: 85%; }
+  .noticiasItem-card {
+    width: 80%; } }
+
 /* Estilos Card Noticias */
 .noticiasSeccion {
   margin-bottom: 50px; }
@@ -148,6 +157,14 @@ body {
 .itemPelicula-titulo:hover {
   text-decoration: none; }
 
+/* Media Responsive */
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .itemPelicula-img {
+    transition: transform 0.8s;
+    max-height: 200px; }
+  .item {
+    width: 80%; } }
+
 /* Variables */
 /* Variables */
 /* Cursos */
@@ -165,6 +182,13 @@ body {
   max-height: 190px;
   position: relative;
   overflow: hidden; }
+
+/* Media Responsive carousel y navbar */
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .conteinerCursos__card {
+    width: 95%; }
+  .conteinerCursos__imgContenedor {
+    max-height: 150px; } }
 
 /* Variables */
 /* Variables */
