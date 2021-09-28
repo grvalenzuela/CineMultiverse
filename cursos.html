@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5fa9c796f4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Cine Multiverse</title>
   </head>
   <!-- Seccion Cursos donde se mostrara una lista de cursos cortos compuestos de pequeños video tutoriales sobre iluminacion, manejo de camara, etc. -->
@@ -55,9 +59,6 @@
               <a href="cursos.html" class="menuNav__link">Cursos</a>
             </li>
             <li class="menuNav__item">
-              <a href="extras.html" class="menuNav__link">Extras</a>
-            </li>
-            <li class="menuNav__item">
               <a href="contacto.html" class="menuNav__link">Contacto</a>
             </li>
           </ul>
@@ -84,14 +85,14 @@
         justify-content-center
       "
     >
-      <div class="row">
+      <div class="d-flex justify-content-center">
         <div class="col-md-4 conteinerCursos__item">
           <div class="card conteinerCursos__card">
             <div class="conteinerCursos__imgContenedor">
               <img
                 class="card-img-top"
                 src="https://www.25digital.com.ar/wp-content/uploads/2020/06/camarografo.jpg"
-                alt="Card image cap"
+                alt="Manejo de Camara"
               />
             </div>
 
@@ -125,7 +126,7 @@
               <img
                 class="card-img-top"
                 src="https://www.laprimerapiedra.com.ar/wp-content/uploads/Al-cine-con-amor.jpg"
-                alt="Card image cap"
+                alt="Crítica de Cine"
               />
             </div>
             <div class="card-body">
@@ -157,7 +158,7 @@
               <img
                 class="card-img-top"
                 src="https://i2.wp.com/cineseriesytecnicasdeguion.com/wp-content/uploads/2017/12/escribiendo-1.jpg?resize=578%2C385"
-                alt="Card image cap"
+                alt="Guión"
               />
             </div>
 
@@ -187,10 +188,29 @@
       </div>
     </div>
   </body>
-  <footer class="footer position-static d-flex justify-content-center">
-    <p>
-      <strong>Valenzuela Gabriel Román - 2021</strong>
-    </p>
+  <footer class="footer">
+    <div class="row">
+      <div class="col-md-4 footer__firma">
+        <p>
+          <strong>Valenzuela Gabriel Román - 2021</strong>
+        </p>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4 footer__social">
+        <ul class="social-network social-circle d-flex justify-content-end">
+          <li>
+            <a href="#" class="icoFacebook" title="Facebook"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="icoInstagram" title="Instagram"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </html>
 <script

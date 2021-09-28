@@ -84,6 +84,7 @@ body {
 .footer {
   margin-top: 40px;
   width: 100%;
+  padding: 20px;
   background: rgb(65, 2, 112);
   background: linear-gradient(
     126deg,
@@ -93,4 +94,61 @@ body {
   );
   color: white;
   font-size: 110%;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.social-network a.icoInstagram:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoInstagram:hover i {
+  color: rgb(0, 0, 0);
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle i {
+  color: #4f2470;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #f9f9f9;
 }
