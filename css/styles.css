@@ -80,7 +80,7 @@ ul.social-network li {
   display: inline;
   margin: 0 5px; }
 
-/* footer social icons */
+/* Iconos Redes */
 .social-network a.icoFacebook:hover {
   transform: scale(1.05);
   background-color: #fff; }
